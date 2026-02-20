@@ -1,13 +1,15 @@
 # Specification
 
 ## Summary
-**Goal:** Build a modern, professional landing page for Able Internet Payroll that showcases payroll management services and features.
+**Goal:** Redesign the application with a modern 2026 aesthetic using bold gradients, glassmorphism effects, and smooth animations while preserving all existing content.
 
 **Planned changes:**
-- Create a responsive landing page with hero section and call-to-action elements
-- Display core payroll features: employee management, payroll processing, tax filing and compliance (W-2s, 1099s, quarterly reports), direct deposit, time tracking integration, benefits administration, and reporting capabilities
-- Highlight mobile access and platform accessibility
-- Include informational sections on compliance, security, and tax filing features
-- Design with a professional, trustworthy visual theme appropriate for financial services using a sophisticated color palette, clean typography, and structured layouts
+- Update color palette to use bold, vibrant gradients throughout the application
+- Apply glassmorphism effects to cards, feature sections, and UI elements with frosted glass backgrounds and blur effects
+- Add smooth scroll-triggered animations that activate as sections enter the viewport
+- Update typography with larger, bolder headings and modern font weight combinations
+- Add interactive hover effects and micro-animations to buttons, cards, and interactive elements
+- Redesign the Hero section with dramatic gradients and dynamic background elements
+- Apply the new visual design system consistently across all existing content sections
 
-**User-visible outcome:** Users can view a professional marketing website that presents Able Internet Payroll's services, features, and capabilities in an organized, scannable format across all devices.
+**User-visible outcome:** The application will have a cutting-edge 2026 visual design with bold gradients, glassmorphism effects, and smooth animations while maintaining all existing payroll features, content, and messaging.

@@ -12,26 +12,26 @@ interface FeatureCardProps {
 
 export default function FeatureCard({ icon, iconImage, title, description, category }: FeatureCardProps) {
   return (
-    <Card className="group relative overflow-hidden border-border/50 bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-lg">
-      <CardContent className="p-6">
+    <Card className="group relative overflow-hidden glass-card transition-all duration-500 hover:scale-105 hover:shadow-glow interactive-glow">
+      <CardContent className="p-7">
         {/* Category Badge */}
         {category && (
-          <Badge variant="secondary" className="mb-4 text-xs">
+          <Badge variant="secondary" className="mb-5 bg-primary/10 text-primary text-xs font-bold tracking-wide">
             {category}
           </Badge>
         )}
 
-        {/* Icon */}
-        <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
+        {/* Icon with Enhanced Glassmorphism */}
+        <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 text-primary backdrop-blur-sm transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-glow">
           {iconImage ? (
-            <img src={iconImage} alt={title} className="h-8 w-8" />
+            <img src={iconImage} alt={title} className="h-9 w-9" />
           ) : (
             icon
           )}
         </div>
 
-        {/* Title */}
-        <h3 className="mb-2 text-lg font-semibold text-foreground">
+        {/* Title with Modern Typography */}
+        <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground">
           {title}
         </h3>
 
@@ -40,8 +40,11 @@ export default function FeatureCard({ icon, iconImage, title, description, categ
           {description}
         </p>
 
-        {/* Hover Effect Border */}
-        <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full" />
+        {/* Animated Gradient Border */}
+        <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-primary via-accent to-primary transition-all duration-500 group-hover:w-full" />
+        
+        {/* Glow Effect on Hover */}
+        <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-primary/0 to-accent/0 opacity-0 transition-opacity duration-500 group-hover:from-primary/5 group-hover:to-accent/5 group-hover:opacity-100" />
       </CardContent>
     </Card>
   );

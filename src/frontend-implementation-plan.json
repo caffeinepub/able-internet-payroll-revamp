@@ -1,116 +1,244 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Able Internet Payroll Website",
+  "title": "Redesign with trendy 2026 aesthetic using bold gradients, glassmorphism, and modern animations",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Create modern landing page with hero section, features overview, and call-to-action elements",
+      "id": "REQ-6",
+      "summary": "Update the color palette throughout the application to use bold, vibrant gradients with modern 2026 aesthetics",
       "acceptanceCriteria": [
-        "Landing page includes prominent hero section with value proposition",
-        "Key features are displayed in an organized, scannable format",
-        "Clear call-to-action buttons are present (e.g., 'Get Started', 'Request Demo')",
-        "Page is fully responsive across mobile, tablet, and desktop"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Replace existing app content with landing page structure including hero section with headline, subheadline, and CTA buttons, followed by features overview section. Wire in the generated hero banner image at frontend/public/assets/generated/hero-banner.dim_1200x600.png as the hero background. Ensure responsive layout using Tailwind CSS classes."
-        },
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "create",
-          "description": "Create Hero component with prominent value proposition headline, supporting text, and primary/secondary CTA buttons ('Get Started', 'Request Demo'). Use the generated hero banner image at frontend/public/assets/generated/hero-banner.dim_1200x600.png as background. Implement responsive design with mobile-first approach using Tailwind CSS."
-        },
-        {
-          "path": "frontend/src/components/FeaturesOverview.tsx",
-          "operation": "create",
-          "description": "Create FeaturesOverview component displaying grid of key payroll features in organized, scannable format. Use card-based layout with responsive columns (mobile: 1, tablet: 2, desktop: 3). Prepare structure for feature items that will be populated in REQ-2."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Display core payroll features with descriptions and visual organization",
-      "acceptanceCriteria": [
-        "Each feature is presented with clear description",
-        "Features are organized in logical groupings",
-        "Visual hierarchy makes key capabilities immediately apparent"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/FeatureCard.tsx",
-          "operation": "create",
-          "description": "Create FeatureCard component to display individual feature with icon, title, and description. Use shadcn/ui Card component for consistent styling. Accept icon, title, and description as props. Implement visual hierarchy with appropriate typography sizes and spacing."
-        },
-        {
-          "path": "frontend/src/components/FeaturesOverview.tsx",
-          "operation": "modify",
-          "description": "Populate FeaturesOverview with all core payroll features: employee management (using frontend/public/assets/generated/icon-employees.dim_64x64.png), payroll processing, tax filing and compliance (using frontend/public/assets/generated/icon-tax.dim_64x64.png), direct deposit (using frontend/public/assets/generated/icon-payment.dim_64x64.png), time tracking integration, benefits administration, and reporting capabilities (using frontend/public/assets/generated/icon-reports.dim_64x64.png). Group features logically and render using FeatureCard components. Ensure visual hierarchy emphasizes key capabilities."
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Highlight mobile access capabilities and platform accessibility",
-      "acceptanceCriteria": [
-        "Mobile access capabilities are prominently featured",
-        "Section includes relevant information about platform accessibility"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/MobileAccessSection.tsx",
-          "operation": "create",
-          "description": "Create MobileAccessSection component highlighting mobile access capabilities and platform accessibility. Include heading, descriptive text about mobile app availability, cross-platform support, and accessibility features. Use responsive layout with visual emphasis on mobile-first design. Implement using Tailwind CSS for styling."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire MobileAccessSection component into the landing page layout, positioned after FeaturesOverview section. Ensure proper spacing and visual flow."
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Create informational sections for compliance, security, and tax filing features",
-      "acceptanceCriteria": [
-        "Compliance and security information is clearly presented",
-        "Tax filing capabilities (W-2s, 1099s, quarterly reports) are detailed",
-        "Content builds trust and credibility"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/ComplianceSection.tsx",
-          "operation": "create",
-          "description": "Create ComplianceSection component presenting compliance and security information with trust-building content. Include subsections for tax filing capabilities (W-2s, 1099s, quarterly reports), data security measures, and regulatory compliance. Use professional tone and clear presentation. Implement using shadcn/ui components for consistent styling."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire ComplianceSection component into the landing page layout, positioned after MobileAccessSection. Ensure proper spacing and visual hierarchy that builds credibility."
-        }
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "summary": "Implement professional, trustworthy visual theme with sophisticated color palette and clean typography",
-      "acceptanceCriteria": [
-        "Color scheme evokes professionalism and trust appropriate for financial services",
-        "Typography is clean, readable, and professional",
-        "Layout structure is organized and facilitates easy information scanning",
-        "Visual style is consistent throughout all pages and components"
+        "Application uses modern gradient color schemes throughout",
+        "Colors feel contemporary and forward-thinking while remaining professional",
+        "Gradients are applied to backgrounds, cards, and UI elements",
+        "Color palette is consistent across all pages and components"
       ],
       "file_operations": [
         {
           "path": "frontend/src/index.css",
           "operation": "modify",
-          "description": "Update global styles and CSS variables to implement professional color palette appropriate for financial/payroll services (deep blues, grays, accent colors that evoke trust and reliability). Define typography scale with clean, readable font families. Establish consistent spacing and layout utilities. Update Tailwind CSS theme configuration if needed for custom colors."
+          "description": "Replace the current OKLCH color system with bold, vibrant gradient-friendly color variables. Add new CSS custom properties for gradient combinations (e.g., primary-gradient, accent-gradient, background-gradient) that define modern 2026 color schemes. Update existing color tokens to support gradient overlays while maintaining professional credibility for financial services. Add utility classes for applying gradients to backgrounds and text."
         },
         {
           "path": "frontend/tailwind.config.js",
           "operation": "modify",
-          "description": "Extend Tailwind configuration with custom color palette for financial/payroll theme (primary, secondary, accent colors), custom font families for professional typography, and spacing scale that supports organized layouts. Ensure configuration supports the visual theme across all components."
+          "description": "Extend the Tailwind configuration to support the new gradient color system. Add gradient color stops using the new CSS variables from index.css. Configure backgroundImage utilities for common gradient patterns (linear, radial). Ensure the gradient system works seamlessly with the existing OKLCH color space for smooth color transitions."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Apply glassmorphism effects to card components, feature sections, and UI elements throughout the site",
+      "acceptanceCriteria": [
+        "FeatureCard components use glassmorphism styling with backdrop blur",
+        "Section backgrounds incorporate frosted glass effects where appropriate",
+        "Glassmorphic elements have subtle borders and transparency",
+        "Effects are performant and visually consistent"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FeatureCard.tsx",
+          "operation": "modify",
+          "description": "Apply glassmorphism styling to the card component including backdrop-filter blur effects, semi-transparent backgrounds using rgba or CSS custom properties, subtle light borders (1px with low opacity), and appropriate box shadows. Ensure hover effects work well with the glass effect. Maintain all existing content, text, icons, and functionality while updating only the visual styling."
+        },
+        {
+          "path": "frontend/src/components/FeaturesOverview.tsx",
+          "operation": "modify",
+          "description": "Update the section background to incorporate frosted glass effects where appropriate. Apply subtle glassmorphic styling to the section container if it enhances the visual design. Ensure the 8-card grid layout remains intact and the glassmorphism on individual cards (applied via FeatureCard component) is complemented by the section styling. Preserve all existing text content and feature descriptions."
+        },
+        {
+          "path": "frontend/src/components/MobileAccessSection.tsx",
+          "operation": "modify",
+          "description": "Apply glassmorphism effects to feature blocks or card-like elements within the section. Use backdrop blur, semi-transparent backgrounds, and subtle borders to create frosted glass appearance for platform icons and descriptions. Maintain all existing content about mobile apps, desktop, tablet, and cloud-based features."
+        },
+        {
+          "path": "frontend/src/components/ComplianceSection.tsx",
+          "operation": "modify",
+          "description": "Add glassmorphism styling to the compliance feature cards in the two-column grid. Apply backdrop blur effects, semi-transparent backgrounds, and light border treatments to the feature list containers. Preserve all existing content about automated tax filing and enterprise security certifications."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add utility classes and CSS custom properties to support glassmorphism effects globally. Define reusable backdrop-filter blur values, semi-transparent background colors, and border styles that can be applied consistently across components. Include utility classes like .glass-card, .glass-light, .glass-dark for common glassmorphic patterns."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add smooth scroll-triggered animations to all major sections that animate elements into view as users scroll down the page",
+      "acceptanceCriteria": [
+        "Sections fade in or slide in when they enter the viewport",
+        "Animations are smooth and performant",
+        "Animation timing feels natural and not jarring",
+        "Elements animate sequentially for visual interest"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/hooks/useScrollAnimation.ts",
+          "operation": "create",
+          "description": "Create a custom React hook that uses Intersection Observer API to detect when elements enter the viewport. Return state indicating visibility and provide configuration options for threshold, root margin, and trigger-once behavior. Ensure the hook is performant and handles cleanup properly on unmount."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Integrate the useScrollAnimation hook to add scroll-triggered animations to Hero section elements. Apply fade-in or slide-up animations to the headline, subheadline, CTA buttons, and trust indicators with staggered timing for sequential reveal. Use CSS transitions or Tailwind animation utilities. Preserve all existing content and messaging."
+        },
+        {
+          "path": "frontend/src/components/FeaturesOverview.tsx",
+          "operation": "modify",
+          "description": "Apply scroll-triggered animations using the useScrollAnimation hook. Animate the section heading and the 8-card grid with staggered entrance effects (fade-in or slide-up). Ensure cards animate sequentially for visual interest. Preserve all existing feature content and descriptions."
+        },
+        {
+          "path": "frontend/src/components/MobileAccessSection.tsx",
+          "operation": "modify",
+          "description": "Add scroll-triggered animations using the useScrollAnimation hook to the section heading and platform feature blocks. Apply fade-in or slide-in effects with appropriate timing. Keep all existing content about multi-platform access intact."
+        },
+        {
+          "path": "frontend/src/components/ComplianceSection.tsx",
+          "operation": "modify",
+          "description": "Integrate scroll-triggered animations using the useScrollAnimation hook for the section heading and the two-column compliance feature grid. Apply fade-in or slide-in effects with staggered timing. Maintain all existing compliance and security content."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add CSS keyframe animations and utility classes to support scroll-triggered effects. Define animations like fadeIn, slideUp, slideInLeft, slideInRight with smooth easing functions. Add classes like .animate-fade-in, .animate-slide-up with appropriate durations and delays that can be applied via the scroll animation hook."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Update typography styling with modern 2026 trends including larger, bolder headings, generous letter spacing, and contemporary font weight combinations",
+      "acceptanceCriteria": [
+        "Heading sizes are increased with bold, impactful typography",
+        "Letter spacing and line height are optimized for modern aesthetics",
+        "Font weight hierarchy is clear and contemporary",
+        "Typography maintains excellent readability"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update typography scales with larger heading sizes (h1, h2, h3) for modern 2026 aesthetics. Increase letter-spacing for headings using tracking utilities. Optimize line-height for improved readability. Define contemporary font weight combinations (e.g., font-bold for headings, font-medium for subheadings, font-normal for body). Add utility classes for modern typography patterns like .heading-hero, .heading-section, .text-feature."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend the typography configuration with larger fontSize scales for headings. Configure letterSpacing values for generous spacing on display text. Set lineHeight values optimized for modern aesthetics and readability. Ensure fontWeight scale supports contemporary weight combinations. The Inter font family should remain but with updated size and spacing configurations."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Update the Hero section heading and subheading with the new typography utilities. Apply larger sizes, bolder weights, and generous letter spacing to create impactful display typography. Ensure the headline \"Payroll Made Simple & Secure\" uses the new heading-hero style. Preserve all existing text content."
+        },
+        {
+          "path": "frontend/src/components/FeaturesOverview.tsx",
+          "operation": "modify",
+          "description": "Apply the new typography styling to the section heading and feature titles within the 8-card grid. Use updated heading sizes, letter spacing, and font weights for a contemporary look. Maintain excellent readability for feature descriptions. Keep all existing text content unchanged."
+        },
+        {
+          "path": "frontend/src/components/MobileAccessSection.tsx",
+          "operation": "modify",
+          "description": "Update the section heading and feature titles with modern typography utilities. Apply larger sizes, appropriate letter spacing, and contemporary font weights. Preserve all existing content about platform features."
+        },
+        {
+          "path": "frontend/src/components/ComplianceSection.tsx",
+          "operation": "modify",
+          "description": "Apply updated typography styling to the section heading and feature list items. Use the new heading styles and optimized spacing for the two-column compliance content. Keep all existing compliance information intact."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Add interactive hover effects and micro-animations to buttons, cards, and interactive elements including smooth transitions, scale effects, and visual feedback",
+      "acceptanceCriteria": [
+        "Buttons have smooth hover effects with scale or glow transitions",
+        "Feature cards respond to hover with elevation or scale changes",
+        "All interactive elements provide clear visual feedback",
+        "Animations are subtle and enhance rather than distract"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Add interactive hover effects to the CTA buttons (\"Get Started Free\" and \"Watch Demo\"). Apply smooth transitions with scale effects (e.g., scale-105), glow effects using box-shadow, or gradient shifts on hover. Ensure animations are subtle and professional. Configure transition duration for smooth feedback. Preserve all existing button text and functionality."
+        },
+        {
+          "path": "frontend/src/components/FeatureCard.tsx",
+          "operation": "modify",
+          "description": "Enhance the existing hover effects with additional micro-animations. Add smooth scale transform (e.g., hover:scale-105), elevation changes via box-shadow, or subtle background color shifts. Apply transform and transition utilities for smooth animations. Ensure the animated bottom border effect integrates well with the new hover behavior. Keep all existing card content and structure."
+        },
+        {
+          "path": "frontend/src/components/FeaturesOverview.tsx",
+          "operation": "modify",
+          "description": "Add hover effects to the bottom CTA buttons with smooth transitions, scale effects, or glow treatments. Ensure the micro-animations complement the feature cards' hover behavior. Preserve all existing button labels and functionality."
+        },
+        {
+          "path": "frontend/src/components/MobileAccessSection.tsx",
+          "operation": "modify",
+          "description": "Add interactive hover effects to the \"Download Mobile App\" CTA button and any interactive platform icons. Apply smooth transitions, scale effects, or visual feedback animations. Keep all existing content intact."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define global transition and animation utilities for interactive elements. Add CSS custom properties for transition durations, easing functions, and hover state values (scale factors, shadow intensities, glow colors). Create utility classes like .interactive-scale, .interactive-glow, .button-hover that can be reused across components for consistent micro-animations."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend the configuration with custom scale values for hover effects, additional box-shadow definitions for elevation and glow effects, and transition timing functions optimized for micro-animations. Configure animation utilities to support the interactive feedback patterns defined in index.css."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Redesign the Hero section with a more dramatic, immersive visual treatment using large gradients, dynamic background elements, and modern layout",
+      "acceptanceCriteria": [
+        "Hero section has a bold, eye-catching gradient background",
+        "Layout feels spacious and contemporary",
+        "Existing headline and CTAs are preserved but styled modernly",
+        "Trust indicators are integrated with the new design"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Redesign the Hero section with dramatic visual treatment. Replace or enhance the current gradient background with bold, eye-catching gradient combinations using the new color system from REQ-6. Add dynamic background elements like animated gradient meshes, geometric shapes, or particle effects for immersive feel. Update the layout to feel more spacious and contemporary with increased padding, better spacing hierarchy, and modern alignment. Ensure the headline \"Payroll Made Simple & Secure\", subheadline, CTA buttons (\"Get Started Free\" and \"Watch Demo\"), and trust indicators are preserved with identical text but styled with the new typography and color system. Integrate trust indicators seamlessly into the modern design."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Update all existing content sections to maintain their information and messaging while applying the new 2026 visual design system",
+      "acceptanceCriteria": [
+        "All text content remains identical to current version",
+        "Feature descriptions and messaging are unchanged",
+        "Section structure and information hierarchy is preserved",
+        "New visual styling is applied uniformly across all sections"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FeaturesOverview.tsx",
+          "operation": "modify",
+          "description": "Apply the complete 2026 visual design system to the FeaturesOverview section including gradients from REQ-6, glassmorphism from REQ-7, scroll animations from REQ-8, modern typography from REQ-9, and hover effects from REQ-10. Ensure all 8 feature cards (employee management, payroll processing, tax filing, direct deposit, time tracking, benefits, reporting, security) retain their exact category badges, titles, descriptions, and icons. Preserve the grid layout and bottom CTA buttons with identical text. Update only visual styling to match the new aesthetic."
+        },
+        {
+          "path": "frontend/src/components/MobileAccessSection.tsx",
+          "operation": "modify",
+          "description": "Apply the complete 2026 visual design system to the MobileAccessSection including gradients, glassmorphism, scroll animations, modern typography, and hover effects. Maintain all existing content about mobile apps, desktop, tablet, and cloud-based payroll access with exact descriptions and icons. Preserve the \"Download Mobile App\" CTA button text. Update only the visual presentation to align with the modern aesthetic."
+        },
+        {
+          "path": "frontend/src/components/ComplianceSection.tsx",
+          "operation": "modify",
+          "description": "Apply the complete 2026 visual design system to the ComplianceSection including gradients, glassmorphism, scroll animations, modern typography, and hover effects. Preserve the two-column grid structure and all existing content about automated tax filing (W-2s, 1099s, quarterly reports) and enterprise security certifications. Keep all feature lists, icons, and descriptions identical. Update only the visual styling to match the trendy 2026 aesthetic."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the Footer component styling to align with the new 2026 visual design system. Apply gradient backgrounds or accents, updated typography, and modern spacing. Preserve the four-column layout with company info, product/company/support navigation links, social media icons, and caffeine.ai attribution with UTM tracking. Keep all link labels and URLs identical. Ensure footer styling complements the overall modern aesthetic."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Review and update the App.tsx root component to ensure consistent application of the 2026 visual design system across all composed sections (Hero, FeaturesOverview, MobileAccessSection, ComplianceSection, Footer). Add any global styling wrappers or layout adjustments needed for the new aesthetic. Ensure smooth visual flow between sections with the gradient backgrounds and glassmorphic elements. Preserve the existing component composition and structure."
         }
       ]
     }
