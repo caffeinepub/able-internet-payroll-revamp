@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Revamp of ableinternetpayroll.com - creating a modern version of the payroll management platform website for evaluation purposes",
+  "architectural_notes": [
+    "Prototype/demo version for evaluation - not a production payroll system",
+    "Focus on UI/UX modernization while maintaining existing content structure",
+    "Based on ableinternetpayroll.com features: employee management, payroll processing, tax filing, direct deposit, time tracking, benefits admin, reporting"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Professional hero banner image showing modern office or payroll dashboard interface (hero-banner.dim_1200x600.png)\n- Icon representing employee management feature (icon-employees.dim_64x64.png)\n- Icon representing tax filing and compliance (icon-tax.dim_64x64.png)\n- Icon representing direct deposit payment (icon-payment.dim_64x64.png)\n- Icon representing analytics and reporting (icon-reports.dim_64x64.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-modern-landing-page-showcasing-payroll-management-services-with-hero-section-key-features-overview-and-call-to-action-elements",
+      "title": "Create a modern landing page showcasing payroll management services with hero section, key features overview, and call-to-action elements",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-core-payroll-features-including-employee-management-payroll-processing-tax-filing-and-compliance-direct-deposit-time-tracking-integration-benefits-administration-and-reporting-capabilities",
+      "title": "Display core payroll features including employee management, payroll processing, tax filing and compliance, direct deposit, time tracking integration, benefits administration, and reporting capabilities",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-include-sections-highlighting-mobile-access-capabilities-and-platform-accessibility",
+      "title": "Include sections highlighting mobile access capabilities and platform accessibility",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-informational-sections-covering-compliance-security-and-tax-filing-features-w-2s-1099s-quarterly-reports",
+      "title": "Create informational sections covering compliance, security, and tax filing features (W-2s, 1099s, quarterly reports)",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-with-a-professional-trustworthy-visual-theme-appropriate-for-a-financial-payroll-service-platform-using-a-sophisticated-color-palette-with-clean-typography-and-structured-layouts-that-convey-reliability-and-efficiency",
+      "title": "Design with a professional, trustworthy visual theme appropriate for a financial/payroll service platform, using a sophisticated color palette with clean typography and structured layouts that convey reliability and efficiency",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create revamped version of ableinternetpayroll.com website with same content",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Able Internet Payroll Revamp",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

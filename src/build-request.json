@@ -1,0 +1,122 @@
+{
+  "kind": "build_request",
+  "title": "Build revamped Able Internet Payroll website",
+  "projectName": "Able Internet Payroll",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a modern landing page showcasing payroll management services with hero section, key features overview, and call-to-action elements",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-3"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Landing page includes prominent hero section with value proposition",
+        "Key features are displayed in an organized, scannable format",
+        "Clear call-to-action buttons are present (e.g., 'Get Started', 'Request Demo')",
+        "Page is fully responsive across mobile, tablet, and desktop"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Display core payroll features including employee management, payroll processing, tax filing and compliance, direct deposit, time tracking integration, benefits administration, and reporting capabilities",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Employee management and payroll processing",
+          "Tax filing and compliance (W-2s, 1099s, quarterly reports)",
+          "Direct deposit and check printing",
+          "Time tracking integration",
+          "Benefits administration",
+          "Reporting and analytics"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each feature is presented with clear description",
+        "Features are organized in logical groupings",
+        "Visual hierarchy makes key capabilities immediately apparent"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Include sections highlighting mobile access capabilities and platform accessibility",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Mobile access"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Mobile access capabilities are prominently featured",
+        "Section includes relevant information about platform accessibility"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create informational sections covering compliance, security, and tax filing features (W-2s, 1099s, quarterly reports)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Tax filing and compliance (W-2s, 1099s, quarterly reports)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Compliance and security information is clearly presented",
+        "Tax filing capabilities (W-2s, 1099s, quarterly reports) are detailed",
+        "Content builds trust and credibility"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Design with a professional, trustworthy visual theme appropriate for a financial/payroll service platform, using a sophisticated color palette with clean typography and structured layouts that convey reliability and efficiency",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-3"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color scheme evokes professionalism and trust appropriate for financial services",
+        "Typography is clean, readable, and professional",
+        "Layout structure is organized and facilitates easy information scanning",
+        "Visual style is consistent throughout all pages and components"
+      ]
+    }
+  ],
+  "constraints": [
+    "This is an informational/marketing website showcase, not a functional payroll processing system",
+    "No actual payroll processing, tax calculations, or banking integrations required",
+    "No employee data storage or real payment processing needed"
+  ],
+  "nonGoals": [
+    "Building actual payroll processing functionality",
+    "Implementing tax calculation engines",
+    "Creating banking integrations for direct deposit",
+    "Developing real-time compliance checking systems",
+    "Building employee authentication and data management systems"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Professional hero banner image showing modern office or payroll dashboard interface (hero-banner.dim_1200x600.png)",
+      "Icon representing employee management feature (icon-employees.dim_64x64.png)",
+      "Icon representing tax filing and compliance (icon-tax.dim_64x64.png)",
+      "Icon representing direct deposit payment (icon-payment.dim_64x64.png)",
+      "Icon representing analytics and reporting (icon-reports.dim_64x64.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "frontend/src/App.tsx": "Main application component that composes the landing page with Hero, FeaturesOverview, MobileAccessSection, ComplianceSection, and Footer components in a single-page layout.",
+  "frontend/src/components/Hero.tsx": "Hero section component featuring a gradient background with the generated hero banner image, prominent headline with animated accent text, value proposition copy, dual CTA buttons, and trust indicators.",
+  "frontend/src/components/FeaturesOverview.tsx": "Features section displaying an 8-card grid of core payroll capabilities (employee management, payroll processing, tax filing, direct deposit, time tracking, benefits, reporting, security) with category badges and bottom CTA buttons, now with proper Button component import.",
+  "frontend/src/components/FeatureCard.tsx": "Reusable feature card component with icon/image display, category badge, title, description, and hover effects including a bottom border animation.",
+  "frontend/src/components/MobileAccessSection.tsx": "Two-column section highlighting mobile and cross-platform access capabilities with platform-specific features (mobile apps, desktop, tablet, cloud) and a visual device mockup.",
+  "frontend/src/components/ComplianceSection.tsx": "Comprehensive compliance and security section with two main cards covering automated tax filing (W-2s, 1099s, quarterly reports) and enterprise security features (encryption, SOC 2, GDPR), plus certification badges.",
+  "frontend/src/components/Footer.tsx": "Full-featured footer with company info, navigation links organized in columns, social media icons, copyright notice, and required caffeine.ai attribution with UTM tracking.",
+  "frontend/src/index.css": "Global styles with professional financial theme using OKLCH color system featuring deep blue primary, teal accent, and comprehensive light/dark mode support with custom grid pattern utility.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with professional color palette, Inter font family, custom border radius, soft shadows, and animation keyframes for the financial services theme.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file for future React Query hooks when backend functionality is implemented."
+}

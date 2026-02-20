@@ -1,0 +1,101 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-modern-landing-page-showcasing-payroll-management-services-with-hero-section-key-features-overview-and-call-to-action-elements",
+      "featureTitle": "Create a modern landing page showcasing payroll management services with hero section, key features overview, and call-to-action elements",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/FeaturesOverview.tsx",
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-display-core-payroll-features-including-employee-management-payroll-processing-tax-filing-and-compliance-direct-deposit-time-tracking-integration-benefits-administration-and-reporting-capabilities",
+      "featureTitle": "Display core payroll features including employee management, payroll processing, tax filing and compliance, direct deposit, time tracking integration, benefits administration, and reporting capabilities",
+      "files": [
+        "frontend/src/components/FeatureCard.tsx",
+        "frontend/src/components/FeaturesOverview.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-include-sections-highlighting-mobile-access-capabilities-and-platform-accessibility",
+      "featureTitle": "Include sections highlighting mobile access capabilities and platform accessibility",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/MobileAccessSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-informational-sections-covering-compliance-security-and-tax-filing-features-w-2s-1099s-quarterly-reports",
+      "featureTitle": "Create informational sections covering compliance, security, and tax filing features (W-2s, 1099s, quarterly reports)",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ComplianceSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-with-a-professional-trustworthy-visual-theme-appropriate-for-a-financial-payroll-service-platform-using-a-sophisticated-color-palette-with-clean-typography-and-structured-layouts-that-convey-reliability-and-efficiency",
+      "featureTitle": "Design with a professional, trustworthy visual theme appropriate for a financial/payroll service platform, using a sophisticated color palette with clean typography and structured layouts that convey reliability and efficiency",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        
+        /* Professional Financial Theme - Light Mode */
+        --background: 0.99 0 0;
+        --foreground: 0.15 0.02 240;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.02 240;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.02 240;
+        
+        /* Deep Professional Blue */
+        --primary: 0.35 0.12 240;
+        --primary-foreground: 0.99 0 0;
+        
+        /* Light Gray for secondary elements */
+        --secondary: 0.96 0.005 240;
+        --secondary-foreground: 0.15 0.02 240;
+        
+        --muted: 0.96 0.005 240;
+        --muted-foreground: 0.50 0.02 240;
+        
+        /* Teal accent for trust and reliability */
+        --accent: 0.55 0.10 180;
+        --accent-foreground: 0.99 0 0;
+        
+        --destructive: 0.55 0.20 25;
+        --destructive-foreground: 0.99 0 0;
+        
+        --border: 0.90 0.005 240;
+        --input: 0.90 0.005 240;
+        --ring: 0.35 0.12 240;
+        
+        --chart-1: 0.55 0.15 240;
+        --chart-2: 0.55 0.10 180;
+        --chart-3: 0.60 0.12 200;
+        --chart-4: 0.50 0.15 260;
+        --chart-5: 0.65 0.10 160;
+    }
+
+    .dark {
+        /* Professional Financial Theme - Dark Mode */
+        --background: 0.12 0.02 240;
+        --foreground: 0.98 0.005 240;
+        
+        --card: 0.16 0.02 240;
+        --card-foreground: 0.98 0.005 240;
+        
+        --popover: 0.14 0.02 240;
+        --popover-foreground: 0.98 0.005 240;
+        
+        /* Lighter blue for dark mode */
+        --primary: 0.70 0.12 240;
+        --primary-foreground: 0.12 0.02 240;
+        
+        --secondary: 0.20 0.02 240;
+        --secondary-foreground: 0.98 0.005 240;
+        
+        --muted: 0.20 0.02 240;
+        --muted-foreground: 0.65 0.01 240;
+        
+        /* Brighter teal for dark mode */
+        --accent: 0.65 0.12 180;
+        --accent-foreground: 0.12 0.02 240;
+        
+        --destructive: 0.60 0.18 25;
+        --destructive-foreground: 0.98 0.005 240;
+        
+        --border: 0.25 0.02 240;
+        --input: 0.25 0.02 240;
+        --ring: 0.70 0.12 240;
+        
+        --chart-1: 0.65 0.15 240;
+        --chart-2: 0.65 0.12 180;
+        --chart-3: 0.70 0.12 200;
+        --chart-4: 0.60 0.15 260;
+        --chart-5: 0.75 0.10 160;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+/* Custom utility for grid pattern */
+@layer utilities {
+    .bg-grid-pattern {
+        background-image: 
+            linear-gradient(to right, currentColor 1px, transparent 1px),
+            linear-gradient(to bottom, currentColor 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+}
