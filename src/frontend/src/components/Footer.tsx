@@ -7,88 +7,160 @@ export default function Footer() {
   // Generate app identifier for UTM tracking
   const appIdentifier = typeof window !== 'undefined' 
     ? encodeURIComponent(window.location.hostname)
-    : 'able-payroll';
+    : 'payroll-app';
+  
+  const caffeineUrl = `https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appIdentifier}`;
 
   return (
-    <footer className="relative border-t border-border/50 bg-gradient-to-b from-muted/30 to-muted/50 overflow-hidden">
-      {/* Decorative Background */}
-      <div className="absolute top-0 left-1/4 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 h-96 w-96 rounded-full bg-accent/5 blur-3xl" />
-      
-      <div className="container relative mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+    <footer className="border-t-4 border-primary bg-background">
+      <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div>
-            <h3 className="mb-5 text-xl font-bold tracking-tight text-foreground">Able Internet Payroll</h3>
-            <p className="mb-5 text-base leading-relaxed text-muted-foreground">
-              Complete payroll management solutions for modern businesses. Simple, secure, and compliant.
+            <h3 className="mb-4 text-lg font-bold text-foreground">Able Internet Payroll</h3>
+            <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
+              Modern payroll solutions designed for businesses of all sizes. Simple, secure, and compliant.
             </p>
+            <div className="flex gap-3">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center border-2 border-foreground/20 bg-background text-foreground transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground"
+                aria-label="Facebook"
+              >
+                <SiFacebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center border-2 border-foreground/20 bg-background text-foreground transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground"
+                aria-label="X (Twitter)"
+              >
+                <SiX className="h-5 w-5" />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center border-2 border-foreground/20 bg-background text-foreground transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground"
+                aria-label="LinkedIn"
+              >
+                <SiLinkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center border-2 border-foreground/20 bg-background text-foreground transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground"
+                aria-label="Instagram"
+              >
+                <SiInstagram className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
-          {/* Product */}
+          {/* Product Links */}
           <div>
-            <h4 className="mb-5 text-sm font-bold uppercase tracking-widest text-foreground">Product</h4>
-            <ul className="space-y-3 text-base">
-              <li><a href="#features" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Features</a></li>
-              <li><a href="#pricing" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Pricing</a></li>
-              <li><a href="#integrations" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Integrations</a></li>
-              <li><a href="#mobile" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Mobile App</a></li>
+            <h4 className="mb-4 text-sm font-bold uppercase tracking-wide text-foreground">Product</h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="#features" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="#pricing" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#integrations" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  Integrations
+                </a>
+              </li>
+              <li>
+                <a href="#mobile" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  Mobile App
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Company Links */}
           <div>
-            <h4 className="mb-5 text-sm font-bold uppercase tracking-widest text-foreground">Company</h4>
-            <ul className="space-y-3 text-base">
-              <li><a href="#about" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">About Us</a></li>
-              <li><a href="#contact" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Contact</a></li>
-              <li><a href="#careers" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Careers</a></li>
-              <li><a href="#blog" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Blog</a></li>
+            <h4 className="mb-4 text-sm font-bold uppercase tracking-wide text-foreground">Company</h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="#about" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#careers" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#blog" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Support Links */}
           <div>
-            <h4 className="mb-5 text-sm font-bold uppercase tracking-widest text-foreground">Support</h4>
-            <ul className="space-y-3 text-base">
-              <li><a href="#help" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Help Center</a></li>
-              <li><a href="#docs" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Documentation</a></li>
-              <li><a href="#security" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Security</a></li>
-              <li><a href="#compliance" className="text-muted-foreground transition-all duration-300 hover:text-primary hover:translate-x-1 inline-block">Compliance</a></li>
+            <h4 className="mb-4 text-sm font-bold uppercase tracking-wide text-foreground">Support</h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="#help" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  Help Center
+                </a>
+              </li>
+              <li>
+                <a href="#docs" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#status" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  System Status
+                </a>
+              </li>
+              <li>
+                <a href="#security" className="text-sm text-muted-foreground transition-colors hover:text-primary hover:underline">
+                  Security
+                </a>
+              </li>
             </ul>
           </div>
-        </div>
-
-        {/* Social Links */}
-        <div className="mt-12 flex justify-center gap-6 border-t border-border/50 pt-10">
-          <a href="#facebook" className="glass-card rounded-full p-3 text-muted-foreground transition-all duration-300 hover:scale-110 hover:text-primary hover:shadow-glow" aria-label="Facebook">
-            <SiFacebook className="h-6 w-6" />
-          </a>
-          <a href="#twitter" className="glass-card rounded-full p-3 text-muted-foreground transition-all duration-300 hover:scale-110 hover:text-primary hover:shadow-glow" aria-label="Twitter">
-            <SiX className="h-6 w-6" />
-          </a>
-          <a href="#linkedin" className="glass-card rounded-full p-3 text-muted-foreground transition-all duration-300 hover:scale-110 hover:text-primary hover:shadow-glow" aria-label="LinkedIn">
-            <SiLinkedin className="h-6 w-6" />
-          </a>
-          <a href="#instagram" className="glass-card rounded-full p-3 text-muted-foreground transition-all duration-300 hover:scale-110 hover:text-primary hover:shadow-glow" aria-label="Instagram">
-            <SiInstagram className="h-6 w-6" />
-          </a>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-10 flex flex-col items-center justify-between gap-5 border-t border-border/50 pt-10 text-base text-muted-foreground sm:flex-row">
-          <p className="font-medium">© {currentYear} Able Internet Payroll. All rights reserved.</p>
-          <p className="flex items-center gap-2 font-medium">
-            Built with <Heart className="h-5 w-5 fill-red-500 text-red-500 animate-pulse" /> using{' '}
-            <a 
-              href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appIdentifier}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-primary transition-all duration-300 hover:text-accent hover:scale-105 inline-block"
-            >
-              caffeine.ai
-            </a>
-          </p>
+        <div className="mt-12 border-t-2 border-border pt-8">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <p className="text-sm text-muted-foreground">
+              © {currentYear} Able Internet Payroll. All rights reserved.
+            </p>
+            <p className="flex items-center gap-2 text-sm text-muted-foreground">
+              Built with <Heart className="h-4 w-4 fill-accent text-accent" /> using{' '}
+              <a
+                href={caffeineUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-foreground transition-colors hover:text-primary hover:underline"
+              >
+                caffeine.ai
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

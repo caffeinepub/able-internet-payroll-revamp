@@ -1,157 +1,61 @@
 {
   "kind": "build_request",
-  "title": "Redesign with trendy 2026 aesthetic using bold gradients, glassmorphism, and modern animations",
-  "projectName": "Able Internet Payroll",
+  "title": "Create alternative design version with different aesthetic",
+  "projectName": "Able Payroll",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-6",
-      "text": "Update the color palette throughout the application to use bold, vibrant gradients with modern 2026 aesthetics, replacing the current deep blue and teal scheme with trendy gradient combinations that feel fresh and forward-thinking while maintaining professional credibility for a financial service",
+      "id": "REQ-13",
+      "text": "Create an alternative design version (Version 3) with a completely different visual aesthetic from the current 2026 gradients/glassmorphism style while maintaining all existing payroll content (employee management, payroll processing, tax filing and compliance, direct deposit, time tracking integration, benefits administration, reporting capabilities, mobile access, and security features)",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-user-create-trendy-2026"
+          "msg-final"
         ],
         "quotes": [
-          "create a ableinternetpayroll should look more trendy 2026 design",
-          "bold gradients"
+          "another version of design",
+          "yes"
         ]
       },
       "acceptanceCriteria": [
-        "Application uses modern gradient color schemes throughout",
-        "Colors feel contemporary and forward-thinking while remaining professional",
-        "Gradients are applied to backgrounds, cards, and UI elements",
-        "Color palette is consistent across all pages and components"
+        "All existing content sections from Version 2 are preserved with identical messaging and information",
+        "Visual design uses a distinctly different aesthetic approach from the current purple-blue gradients and glassmorphism",
+        "All sections present in Version 2 (Hero, FeaturesOverview, MobileAccessSection, ComplianceSection, Footer) are included with new styling",
+        "Design maintains professional credibility appropriate for a financial/payroll service platform",
+        "New design system is applied consistently across all components and sections"
       ]
     },
     {
-      "id": "REQ-7",
-      "text": "Apply glassmorphism effects to card components, feature sections, and UI elements throughout the site, including frosted glass backgrounds with blur effects, subtle transparency, and light border treatments",
+      "id": "REQ-14",
+      "text": "Design the alternative version with a cohesive, modern visual theme that differentiates it from the current gradient-heavy, glassmorphic aesthetic - explore options such as minimalist with bold typography, corporate clean with strong geometry, warm and approachable with softer colors, or dark mode with high contrast accents",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-user-create-trendy-2026"
+          "msg-final"
         ],
         "quotes": [
-          "glassmorphism effects"
+          "another version of design"
         ]
       },
       "acceptanceCriteria": [
-        "FeatureCard components use glassmorphism styling with backdrop blur",
-        "Section backgrounds incorporate frosted glass effects where appropriate",
-        "Glassmorphic elements have subtle borders and transparency",
-        "Effects are performant and visually consistent"
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "text": "Add smooth scroll-triggered animations to all major sections (Hero, FeaturesOverview, MobileAccessSection, ComplianceSection) that animate elements into view as users scroll down the page",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-create-trendy-2026"
-        ],
-        "quotes": [
-          "smooth animations"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Sections fade in or slide in when they enter the viewport",
-        "Animations are smooth and performant",
-        "Animation timing feels natural and not jarring",
-        "Elements animate sequentially for visual interest"
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "text": "Update typography styling with modern 2026 trends including larger, bolder headings, generous letter spacing, and contemporary font weight combinations that enhance readability while feeling cutting-edge",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-create-trendy-2026"
-        ],
-        "quotes": [
-          "more trendy 2026 design"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Heading sizes are increased with bold, impactful typography",
-        "Letter spacing and line height are optimized for modern aesthetics",
-        "Font weight hierarchy is clear and contemporary",
-        "Typography maintains excellent readability"
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "text": "Add interactive hover effects and micro-animations to buttons, cards, and interactive elements including smooth transitions, scale effects, and visual feedback that enhance user engagement",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-create-trendy-2026"
-        ],
-        "quotes": [
-          "smooth animations"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Buttons have smooth hover effects with scale or glow transitions",
-        "Feature cards respond to hover with elevation or scale changes",
-        "All interactive elements provide clear visual feedback",
-        "Animations are subtle and enhance rather than distract"
-      ]
-    },
-    {
-      "id": "REQ-11",
-      "text": "Redesign the Hero section with a more dramatic, immersive visual treatment using large gradients, dynamic background elements, and modern layout that captures attention while maintaining the existing messaging and CTA structure",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-create-trendy-2026"
-        ],
-        "quotes": [
-          "completely redesign",
-          "bold gradients"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Hero section has a bold, eye-catching gradient background",
-        "Layout feels spacious and contemporary",
-        "Existing headline and CTAs are preserved but styled modernly",
-        "Trust indicators are integrated with the new design"
-      ]
-    },
-    {
-      "id": "REQ-12",
-      "text": "Update all existing content sections to maintain their information and messaging while applying the new 2026 visual design system, ensuring consistent modern aesthetics across the entire application",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-create-trendy-2026"
-        ],
-        "quotes": [
-          "use the same contents",
-          "keeping all the existing payroll features and information"
-        ]
-      },
-      "acceptanceCriteria": [
-        "All text content remains identical to current version",
-        "Feature descriptions and messaging are unchanged",
-        "Section structure and information hierarchy is preserved",
-        "New visual styling is applied uniformly across all sections"
+        "New design direction is visually distinct from Version 2's purple-blue gradients and glassmorphism",
+        "Color palette, typography, layout patterns, and component styling create a unified visual identity",
+        "Design choice is appropriate for a professional payroll management platform",
+        "Visual hierarchy effectively guides users through content while maintaining brand trustworthiness"
       ]
     }
   ],
   "constraints": [
-    "Preserve all existing text content and messaging from the current site",
-    "Maintain the same section structure and information hierarchy",
-    "Keep all current payroll features and feature descriptions intact",
-    "Do not modify immutable frontend paths including useInternetIdentity hooks, useActor, main.tsx, and ui components directory"
+    "Preserve all existing payroll content and messaging from Version 2",
+    "Maintain professional credibility appropriate for financial services",
+    "Do not modify Internet Identity hooks or authentication components",
+    "Keep all backend functionality unchanged"
   ],
   "nonGoals": [
-    "Adding new features or functionality beyond visual redesign",
-    "Changing the content or messaging of existing sections",
-    "Modifying backend logic or data structures",
-    "Adding new sections or removing existing ones"
+    "Adding new features or functionality beyond design changes",
+    "Modifying content or copy from the current version",
+    "Creating multiple design variations (only one alternative design)",
+    "Implementing backend changes"
   ],
   "imageRequirements": {
     "required": [],

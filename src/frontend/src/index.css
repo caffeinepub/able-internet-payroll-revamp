@@ -4,112 +4,90 @@
 
 @layer base {
     :root {
-        --radius: 0.75rem;
+        --radius: 0.25rem;
         
-        /* 2026 Trendy Theme - Light Mode with Bold Gradients */
-        --background: 0.99 0 0;
-        --foreground: 0.12 0.03 260;
+        /* Clean Corporate Theme - Light Mode */
+        --background: 1.00 0 0;
+        --foreground: 0.20 0.01 240;
         
-        --card: 0.98 0.01 280;
-        --card-foreground: 0.12 0.03 260;
+        --card: 0.98 0 0;
+        --card-foreground: 0.20 0.01 240;
         
-        --popover: 0.98 0.01 280;
-        --popover-foreground: 0.12 0.03 260;
+        --popover: 0.98 0 0;
+        --popover-foreground: 0.20 0.01 240;
         
-        /* Vibrant Purple-Blue Primary */
-        --primary: 0.45 0.20 270;
-        --primary-foreground: 0.99 0 0;
+        /* Deep Navy Primary */
+        --primary: 0.28 0.08 240;
+        --primary-foreground: 1.00 0 0;
         
-        /* Soft Purple Secondary */
-        --secondary: 0.92 0.03 280;
-        --secondary-foreground: 0.12 0.03 260;
+        /* Light Gray Secondary */
+        --secondary: 0.95 0 0;
+        --secondary-foreground: 0.20 0.01 240;
         
-        --muted: 0.94 0.02 280;
-        --muted-foreground: 0.48 0.03 260;
+        --muted: 0.96 0 0;
+        --muted-foreground: 0.50 0.01 240;
         
-        /* Electric Cyan Accent */
-        --accent: 0.65 0.18 200;
-        --accent-foreground: 0.99 0 0;
+        /* Vibrant Orange Accent */
+        --accent: 0.65 0.20 40;
+        --accent-foreground: 1.00 0 0;
         
         --destructive: 0.55 0.22 25;
-        --destructive-foreground: 0.99 0 0;
+        --destructive-foreground: 1.00 0 0;
         
-        --border: 0.88 0.02 280;
-        --input: 0.88 0.02 280;
-        --ring: 0.45 0.20 270;
-        
-        /* Gradient Color Stops */
-        --gradient-start: 0.50 0.22 280;
-        --gradient-mid: 0.55 0.20 250;
-        --gradient-end: 0.60 0.18 220;
-        
-        --gradient-accent-start: 0.65 0.18 200;
-        --gradient-accent-end: 0.70 0.16 180;
-        
-        /* Glass card with transparency */
-        --glass-card: 0.98 0.01 280 / 0.6;
+        --border: 0.90 0 0;
+        --input: 0.90 0 0;
+        --ring: 0.28 0.08 240;
         
         --success: 0.60 0.15 150;
         --warning: 0.65 0.18 80;
         
-        --chart-1: 0.55 0.20 270;
-        --chart-2: 0.65 0.18 200;
-        --chart-3: 0.60 0.16 240;
-        --chart-4: 0.50 0.22 290;
-        --chart-5: 0.70 0.14 180;
+        --chart-1: 0.28 0.08 240;
+        --chart-2: 0.65 0.20 40;
+        --chart-3: 0.60 0.15 150;
+        --chart-4: 0.50 0.10 200;
+        --chart-5: 0.70 0.18 60;
     }
 
     .dark {
-        /* 2026 Trendy Theme - Dark Mode */
-        --background: 0.10 0.03 260;
-        --foreground: 0.98 0.01 280;
+        /* Clean Corporate Theme - Dark Mode */
+        --background: 0.12 0.02 240;
+        --foreground: 0.98 0 0;
         
-        --card: 0.15 0.04 270;
-        --card-foreground: 0.98 0.01 280;
+        --card: 0.16 0.02 240;
+        --card-foreground: 0.98 0 0;
         
-        --popover: 0.14 0.04 270;
-        --popover-foreground: 0.98 0.01 280;
+        --popover: 0.16 0.02 240;
+        --popover-foreground: 0.98 0 0;
         
-        /* Bright Purple-Blue for Dark Mode */
-        --primary: 0.65 0.22 270;
-        --primary-foreground: 0.10 0.03 260;
+        /* Bright Blue Primary for Dark */
+        --primary: 0.60 0.15 240;
+        --primary-foreground: 0.12 0.02 240;
         
-        --secondary: 0.18 0.04 270;
-        --secondary-foreground: 0.98 0.01 280;
+        --secondary: 0.20 0.02 240;
+        --secondary-foreground: 0.98 0 0;
         
-        --muted: 0.20 0.04 270;
-        --muted-foreground: 0.65 0.02 280;
+        --muted: 0.22 0.02 240;
+        --muted-foreground: 0.65 0.01 240;
         
-        /* Bright Cyan for Dark Mode */
-        --accent: 0.75 0.20 200;
-        --accent-foreground: 0.10 0.03 260;
+        /* Bright Orange for Dark */
+        --accent: 0.70 0.22 40;
+        --accent-foreground: 0.12 0.02 240;
         
         --destructive: 0.60 0.20 25;
-        --destructive-foreground: 0.98 0.01 280;
+        --destructive-foreground: 0.98 0 0;
         
-        --border: 0.25 0.04 270;
-        --input: 0.25 0.04 270;
-        --ring: 0.65 0.22 270;
-        
-        /* Gradient Color Stops for Dark Mode */
-        --gradient-start: 0.55 0.24 280;
-        --gradient-mid: 0.60 0.22 250;
-        --gradient-end: 0.65 0.20 220;
-        
-        --gradient-accent-start: 0.75 0.20 200;
-        --gradient-accent-end: 0.80 0.18 180;
-        
-        /* Glass card with transparency */
-        --glass-card: 0.15 0.04 270 / 0.6;
+        --border: 0.25 0.02 240;
+        --input: 0.25 0.02 240;
+        --ring: 0.60 0.15 240;
         
         --success: 0.70 0.16 150;
         --warning: 0.75 0.18 80;
         
-        --chart-1: 0.65 0.22 270;
-        --chart-2: 0.75 0.20 200;
-        --chart-3: 0.70 0.18 240;
-        --chart-4: 0.60 0.24 290;
-        --chart-5: 0.80 0.16 180;
+        --chart-1: 0.60 0.15 240;
+        --chart-2: 0.70 0.22 40;
+        --chart-3: 0.70 0.16 150;
+        --chart-4: 0.65 0.12 200;
+        --chart-5: 0.75 0.20 60;
     }
 
     * {
@@ -131,69 +109,62 @@
         background-size: 40px 40px;
     }
     
-    /* Glassmorphism Utilities */
-    .glass-card {
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        background-color: oklch(var(--glass-card));
-        border: 1px solid oklch(var(--border) / 0.2);
+    /* Clean Card Utilities */
+    .clean-card {
+        background-color: oklch(var(--card));
+        border: 2px solid oklch(var(--border));
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
     }
     
-    .glass-light {
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        background-color: oklch(var(--background) / 0.4);
-        border: 1px solid oklch(var(--border) / 0.3);
+    .clean-card-hover {
+        transition: all 0.3s ease;
     }
     
-    .glass-dark {
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        background-color: oklch(var(--foreground) / 0.1);
-        border: 1px solid oklch(var(--border) / 0.2);
+    .clean-card-hover:hover {
+        border-color: oklch(var(--primary));
+        box-shadow: 0 4px 12px 0 rgb(0 0 0 / 0.15);
+        transform: translateY(-2px);
     }
     
-    /* Gradient Text Utilities */
-    .gradient-text {
-        @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    /* Geometric Accent Bar */
+    .accent-bar {
+        position: relative;
+    }
+    
+    .accent-bar::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background-color: oklch(var(--accent));
     }
     
     /* Animation Utilities */
     .animate-fade-in {
-        animation: fadeIn 0.8s ease-out forwards;
+        animation: fadeIn 0.6s ease-out forwards;
     }
     
     .animate-slide-up {
-        animation: slideUp 0.8s ease-out forwards;
+        animation: slideUp 0.6s ease-out forwards;
     }
     
     .animate-slide-in-left {
-        animation: slideInLeft 0.8s ease-out forwards;
+        animation: slideInLeft 0.6s ease-out forwards;
     }
     
     .animate-slide-in-right {
-        animation: slideInRight 0.8s ease-out forwards;
-    }
-    
-    .animate-scale-in {
-        animation: scaleIn 0.6s ease-out forwards;
+        animation: slideInRight 0.6s ease-out forwards;
     }
     
     /* Interactive Utilities */
-    .interactive-scale {
-        @apply transition-transform duration-300 ease-out hover:scale-105;
-    }
-    
-    .interactive-glow {
-        @apply transition-shadow duration-300 ease-out;
-    }
-    
-    .interactive-glow:hover {
-        box-shadow: 0 0 30px oklch(var(--primary) / 0.4);
+    .interactive-lift {
+        @apply transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg;
     }
     
     .button-hover {
-        @apply transition-all duration-300 ease-out hover:scale-105 hover:shadow-xl;
+        @apply transition-all duration-200 ease-out hover:scale-105;
     }
 }
 
@@ -210,7 +181,7 @@
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
@@ -221,7 +192,7 @@
 @keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateX(-30px);
+        transform: translateX(-20px);
     }
     to {
         opacity: 1;
@@ -232,44 +203,12 @@
 @keyframes slideInRight {
     from {
         opacity: 0;
-        transform: translateX(30px);
+        transform: translateX(20px);
     }
     to {
         opacity: 1;
         transform: translateX(0);
     }
-}
-
-@keyframes scaleIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/* Gradient Mesh Background */
-@keyframes gradientShift {
-    0%, 100% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-}
-
-.gradient-mesh {
-    background: linear-gradient(
-        135deg,
-        oklch(var(--gradient-start)) 0%,
-        oklch(var(--gradient-mid)) 50%,
-        oklch(var(--gradient-end)) 100%
-    );
-    background-size: 200% 200%;
-    animation: gradientShift 15s ease infinite;
 }
 
 /* Stagger Animation Delays */

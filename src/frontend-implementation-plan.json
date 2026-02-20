@@ -1,244 +1,80 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Redesign with trendy 2026 aesthetic using bold gradients, glassmorphism, and modern animations",
+  "title": "Create Alternative Design Version (Version 3) with Different Aesthetic",
   "requirements": [
     {
-      "id": "REQ-6",
-      "summary": "Update the color palette throughout the application to use bold, vibrant gradients with modern 2026 aesthetics",
+      "id": "REQ-13",
+      "summary": "Create Version 3 design preserving all existing payroll content with a completely different visual aesthetic from the current gradients/glassmorphism style",
       "acceptanceCriteria": [
-        "Application uses modern gradient color schemes throughout",
-        "Colors feel contemporary and forward-thinking while remaining professional",
-        "Gradients are applied to backgrounds, cards, and UI elements",
-        "Color palette is consistent across all pages and components"
+        "All existing content sections from Version 2 are preserved with identical messaging and information",
+        "Visual design uses a distinctly different aesthetic approach from the current purple-blue gradients and glassmorphism",
+        "All sections present in Version 2 (Hero, FeaturesOverview, MobileAccessSection, ComplianceSection, Footer) are included with new styling",
+        "Design maintains professional credibility appropriate for a financial/payroll service platform",
+        "New design system is applied consistently across all components and sections"
       ],
       "file_operations": [
         {
           "path": "frontend/src/index.css",
           "operation": "modify",
-          "description": "Replace the current OKLCH color system with bold, vibrant gradient-friendly color variables. Add new CSS custom properties for gradient combinations (e.g., primary-gradient, accent-gradient, background-gradient) that define modern 2026 color schemes. Update existing color tokens to support gradient overlays while maintaining professional credibility for financial services. Add utility classes for applying gradients to backgrounds and text."
+          "description": "Replace the current purple-blue gradient and glassmorphism design system with a new modern aesthetic. Remove OKLCH gradient utilities and glassmorphism classes. Implement a clean, professional color palette appropriate for financial services (consider options like minimalist with bold typography, corporate clean with strong geometry, warm/approachable with softer colors, or dark mode with high contrast). Preserve Tailwind base imports and structure. Maintain all existing CSS custom property names for compatibility but update their values to reflect the new design direction."
         },
         {
           "path": "frontend/tailwind.config.js",
           "operation": "modify",
-          "description": "Extend the Tailwind configuration to support the new gradient color system. Add gradient color stops using the new CSS variables from index.css. Configure backgroundImage utilities for common gradient patterns (linear, radial). Ensure the gradient system works seamlessly with the existing OKLCH color space for smooth color transitions."
-        }
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "summary": "Apply glassmorphism effects to card components, feature sections, and UI elements throughout the site",
-      "acceptanceCriteria": [
-        "FeatureCard components use glassmorphism styling with backdrop blur",
-        "Section backgrounds incorporate frosted glass effects where appropriate",
-        "Glassmorphic elements have subtle borders and transparency",
-        "Effects are performant and visually consistent"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/FeatureCard.tsx",
-          "operation": "modify",
-          "description": "Apply glassmorphism styling to the card component including backdrop-filter blur effects, semi-transparent backgrounds using rgba or CSS custom properties, subtle light borders (1px with low opacity), and appropriate box shadows. Ensure hover effects work well with the glass effect. Maintain all existing content, text, icons, and functionality while updating only the visual styling."
-        },
-        {
-          "path": "frontend/src/components/FeaturesOverview.tsx",
-          "operation": "modify",
-          "description": "Update the section background to incorporate frosted glass effects where appropriate. Apply subtle glassmorphic styling to the section container if it enhances the visual design. Ensure the 8-card grid layout remains intact and the glassmorphism on individual cards (applied via FeatureCard component) is complemented by the section styling. Preserve all existing text content and feature descriptions."
-        },
-        {
-          "path": "frontend/src/components/MobileAccessSection.tsx",
-          "operation": "modify",
-          "description": "Apply glassmorphism effects to feature blocks or card-like elements within the section. Use backdrop blur, semi-transparent backgrounds, and subtle borders to create frosted glass appearance for platform icons and descriptions. Maintain all existing content about mobile apps, desktop, tablet, and cloud-based features."
-        },
-        {
-          "path": "frontend/src/components/ComplianceSection.tsx",
-          "operation": "modify",
-          "description": "Add glassmorphism styling to the compliance feature cards in the two-column grid. Apply backdrop blur effects, semi-transparent backgrounds, and light border treatments to the feature list containers. Preserve all existing content about automated tax filing and enterprise security certifications."
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Add utility classes and CSS custom properties to support glassmorphism effects globally. Define reusable backdrop-filter blur values, semi-transparent background colors, and border styles that can be applied consistently across components. Include utility classes like .glass-card, .glass-light, .glass-dark for common glassmorphic patterns."
-        }
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "summary": "Add smooth scroll-triggered animations to all major sections that animate elements into view as users scroll down the page",
-      "acceptanceCriteria": [
-        "Sections fade in or slide in when they enter the viewport",
-        "Animations are smooth and performant",
-        "Animation timing feels natural and not jarring",
-        "Elements animate sequentially for visual interest"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/hooks/useScrollAnimation.ts",
-          "operation": "create",
-          "description": "Create a custom React hook that uses Intersection Observer API to detect when elements enter the viewport. Return state indicating visibility and provide configuration options for threshold, root margin, and trigger-once behavior. Ensure the hook is performant and handles cleanup properly on unmount."
+          "description": "Update Tailwind configuration to support the new design system. Replace the vibrant purple-blue and cyan color palette with colors that match the new aesthetic direction chosen in index.css. Update typography settings if needed to support the new visual identity (e.g., different font weights, sizes, or line heights for a minimalist or corporate look). Keep the Inter font family. Ensure border radius, spacing, and other design tokens align with the new design language. Remove or update any glassmorphism-specific utilities."
         },
         {
           "path": "frontend/src/components/Hero.tsx",
           "operation": "modify",
-          "description": "Integrate the useScrollAnimation hook to add scroll-triggered animations to Hero section elements. Apply fade-in or slide-up animations to the headline, subheadline, CTA buttons, and trust indicators with staggered timing for sequential reveal. Use CSS transitions or Tailwind animation utilities. Preserve all existing content and messaging."
+          "description": "Redesign the Hero component with the new aesthetic while preserving all existing content (headline 'Payroll Made Simple & Secure', CTA buttons for 'Get Started Free' and 'Watch Demo', trust indicators). Remove animated gradient backgrounds and glassmorphism effects. Apply new styling that aligns with the chosen design direction - this may include clean geometric layouts, bold typography treatments, different background approaches (solid colors, subtle patterns, or high-contrast dark themes), and updated button styles. Preserve scroll animations if they fit the new aesthetic or replace with animations appropriate to the new design language. Maintain the same content structure and messaging."
         },
         {
           "path": "frontend/src/components/FeaturesOverview.tsx",
           "operation": "modify",
-          "description": "Apply scroll-triggered animations using the useScrollAnimation hook. Animate the section heading and the 8-card grid with staggered entrance effects (fade-in or slide-up). Ensure cards animate sequentially for visual interest. Preserve all existing feature content and descriptions."
-        },
-        {
-          "path": "frontend/src/components/MobileAccessSection.tsx",
-          "operation": "modify",
-          "description": "Add scroll-triggered animations using the useScrollAnimation hook to the section heading and platform feature blocks. Apply fade-in or slide-in effects with appropriate timing. Keep all existing content about multi-platform access intact."
-        },
-        {
-          "path": "frontend/src/components/ComplianceSection.tsx",
-          "operation": "modify",
-          "description": "Integrate scroll-triggered animations using the useScrollAnimation hook for the section heading and the two-column compliance feature grid. Apply fade-in or slide-in effects with staggered timing. Maintain all existing compliance and security content."
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Add CSS keyframe animations and utility classes to support scroll-triggered effects. Define animations like fadeIn, slideUp, slideInLeft, slideInRight with smooth easing functions. Add classes like .animate-fade-in, .animate-slide-up with appropriate durations and delays that can be applied via the scroll animation hook."
-        }
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "summary": "Update typography styling with modern 2026 trends including larger, bolder headings, generous letter spacing, and contemporary font weight combinations",
-      "acceptanceCriteria": [
-        "Heading sizes are increased with bold, impactful typography",
-        "Letter spacing and line height are optimized for modern aesthetics",
-        "Font weight hierarchy is clear and contemporary",
-        "Typography maintains excellent readability"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Update typography scales with larger heading sizes (h1, h2, h3) for modern 2026 aesthetics. Increase letter-spacing for headings using tracking utilities. Optimize line-height for improved readability. Define contemporary font weight combinations (e.g., font-bold for headings, font-medium for subheadings, font-normal for body). Add utility classes for modern typography patterns like .heading-hero, .heading-section, .text-feature."
-        },
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Extend the typography configuration with larger fontSize scales for headings. Configure letterSpacing values for generous spacing on display text. Set lineHeight values optimized for modern aesthetics and readability. Ensure fontWeight scale supports contemporary weight combinations. The Inter font family should remain but with updated size and spacing configurations."
-        },
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "modify",
-          "description": "Update the Hero section heading and subheading with the new typography utilities. Apply larger sizes, bolder weights, and generous letter spacing to create impactful display typography. Ensure the headline \"Payroll Made Simple & Secure\" uses the new heading-hero style. Preserve all existing text content."
-        },
-        {
-          "path": "frontend/src/components/FeaturesOverview.tsx",
-          "operation": "modify",
-          "description": "Apply the new typography styling to the section heading and feature titles within the 8-card grid. Use updated heading sizes, letter spacing, and font weights for a contemporary look. Maintain excellent readability for feature descriptions. Keep all existing text content unchanged."
-        },
-        {
-          "path": "frontend/src/components/MobileAccessSection.tsx",
-          "operation": "modify",
-          "description": "Update the section heading and feature titles with modern typography utilities. Apply larger sizes, appropriate letter spacing, and contemporary font weights. Preserve all existing content about platform features."
-        },
-        {
-          "path": "frontend/src/components/ComplianceSection.tsx",
-          "operation": "modify",
-          "description": "Apply updated typography styling to the section heading and feature list items. Use the new heading styles and optimized spacing for the two-column compliance content. Keep all existing compliance information intact."
-        }
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "summary": "Add interactive hover effects and micro-animations to buttons, cards, and interactive elements including smooth transitions, scale effects, and visual feedback",
-      "acceptanceCriteria": [
-        "Buttons have smooth hover effects with scale or glow transitions",
-        "Feature cards respond to hover with elevation or scale changes",
-        "All interactive elements provide clear visual feedback",
-        "Animations are subtle and enhance rather than distract"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "modify",
-          "description": "Add interactive hover effects to the CTA buttons (\"Get Started Free\" and \"Watch Demo\"). Apply smooth transitions with scale effects (e.g., scale-105), glow effects using box-shadow, or gradient shifts on hover. Ensure animations are subtle and professional. Configure transition duration for smooth feedback. Preserve all existing button text and functionality."
+          "description": "Redesign the FeaturesOverview section with the new aesthetic while maintaining all 8 feature cards and their content. Remove glassmorphism styling and current gradient effects from the grid layout. Apply new card designs consistent with the chosen aesthetic (could be flat cards with strong shadows for corporate look, minimal bordered cards for clean design, or high-contrast cards for dark theme). Update scroll-triggered animations and staggered entrance effects to match the new design language. Preserve the CTA buttons but restyle them according to the new design system. Keep all feature descriptions and messaging identical."
         },
         {
           "path": "frontend/src/components/FeatureCard.tsx",
           "operation": "modify",
-          "description": "Enhance the existing hover effects with additional micro-animations. Add smooth scale transform (e.g., hover:scale-105), elevation changes via box-shadow, or subtle background color shifts. Apply transform and transition utilities for smooth animations. Ensure the animated bottom border effect integrates well with the new hover behavior. Keep all existing card content and structure."
-        },
-        {
-          "path": "frontend/src/components/FeaturesOverview.tsx",
-          "operation": "modify",
-          "description": "Add hover effects to the bottom CTA buttons with smooth transitions, scale effects, or glow treatments. Ensure the micro-animations complement the feature cards' hover behavior. Preserve all existing button labels and functionality."
+          "description": "Redesign the FeatureCard component to match the new design system while preserving the component API and content structure. Remove glassmorphic styling, gradient borders, and glow shadow effects. Implement new card styling appropriate to the chosen aesthetic direction - options include flat design with bold shadows, minimal borders with strong typography, warm color accents, or high-contrast dark cards. Update hover effects to be consistent with the new design language (subtle scale, border changes, or shadow shifts instead of glow effects). Preserve the optional category badge prop but restyle it. Ensure the new design maintains visual hierarchy and readability."
         },
         {
           "path": "frontend/src/components/MobileAccessSection.tsx",
           "operation": "modify",
-          "description": "Add interactive hover effects to the \"Download Mobile App\" CTA button and any interactive platform icons. Apply smooth transitions, scale effects, or visual feedback animations. Keep all existing content intact."
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Define global transition and animation utilities for interactive elements. Add CSS custom properties for transition durations, easing functions, and hover state values (scale factors, shadow intensities, glow colors). Create utility classes like .interactive-scale, .interactive-glow, .button-hover that can be reused across components for consistent micro-animations."
-        },
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Extend the configuration with custom scale values for hover effects, additional box-shadow definitions for elevation and glow effects, and transition timing functions optimized for micro-animations. Configure animation utilities to support the interactive feedback patterns defined in index.css."
-        }
-      ]
-    },
-    {
-      "id": "REQ-11",
-      "summary": "Redesign the Hero section with a more dramatic, immersive visual treatment using large gradients, dynamic background elements, and modern layout",
-      "acceptanceCriteria": [
-        "Hero section has a bold, eye-catching gradient background",
-        "Layout feels spacious and contemporary",
-        "Existing headline and CTAs are preserved but styled modernly",
-        "Trust indicators are integrated with the new design"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "modify",
-          "description": "Redesign the Hero section with dramatic visual treatment. Replace or enhance the current gradient background with bold, eye-catching gradient combinations using the new color system from REQ-6. Add dynamic background elements like animated gradient meshes, geometric shapes, or particle effects for immersive feel. Update the layout to feel more spacious and contemporary with increased padding, better spacing hierarchy, and modern alignment. Ensure the headline \"Payroll Made Simple & Secure\", subheadline, CTA buttons (\"Get Started Free\" and \"Watch Demo\"), and trust indicators are preserved with identical text but styled with the new typography and color system. Integrate trust indicators seamlessly into the modern design."
-        }
-      ]
-    },
-    {
-      "id": "REQ-12",
-      "summary": "Update all existing content sections to maintain their information and messaging while applying the new 2026 visual design system",
-      "acceptanceCriteria": [
-        "All text content remains identical to current version",
-        "Feature descriptions and messaging are unchanged",
-        "Section structure and information hierarchy is preserved",
-        "New visual styling is applied uniformly across all sections"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/FeaturesOverview.tsx",
-          "operation": "modify",
-          "description": "Apply the complete 2026 visual design system to the FeaturesOverview section including gradients from REQ-6, glassmorphism from REQ-7, scroll animations from REQ-8, modern typography from REQ-9, and hover effects from REQ-10. Ensure all 8 feature cards (employee management, payroll processing, tax filing, direct deposit, time tracking, benefits, reporting, security) retain their exact category badges, titles, descriptions, and icons. Preserve the grid layout and bottom CTA buttons with identical text. Update only visual styling to match the new aesthetic."
-        },
-        {
-          "path": "frontend/src/components/MobileAccessSection.tsx",
-          "operation": "modify",
-          "description": "Apply the complete 2026 visual design system to the MobileAccessSection including gradients, glassmorphism, scroll animations, modern typography, and hover effects. Maintain all existing content about mobile apps, desktop, tablet, and cloud-based payroll access with exact descriptions and icons. Preserve the \"Download Mobile App\" CTA button text. Update only the visual presentation to align with the modern aesthetic."
+          "description": "Redesign the MobileAccessSection with the new aesthetic while preserving all content about mobile-first payroll access across devices (smartphone, tablet, desktop). Remove glassmorphism cards and gradient styling. Apply new design treatments for the device showcase cards and platform feature highlights that align with the chosen aesthetic. Update scroll animations to fit the new design language. Maintain the same content structure emphasizing cross-device accessibility. Consider alternative ways to visually represent multi-device support (device mockups, icons, or layout patterns) that fit the new design direction."
         },
         {
           "path": "frontend/src/components/ComplianceSection.tsx",
           "operation": "modify",
-          "description": "Apply the complete 2026 visual design system to the ComplianceSection including gradients, glassmorphism, scroll animations, modern typography, and hover effects. Preserve the two-column grid structure and all existing content about automated tax filing (W-2s, 1099s, quarterly reports) and enterprise security certifications. Keep all feature lists, icons, and descriptions identical. Update only the visual styling to match the trendy 2026 aesthetic."
+          "description": "Redesign the ComplianceSection with the new aesthetic while preserving all content about tax filing and security features. Remove glassmorphic cards, gradient backgrounds, and animated gradient borders. Apply new styling for the compliance cards that maintains professional credibility and security trust indicators. Update or replace scroll-triggered animations and hover effects to align with the new design language. Restyle the animated certification badges consistently with the new aesthetic. Maintain the same messaging about compliance, security, and certifications. Ensure the new design conveys trust and security appropriate for financial services."
         },
         {
           "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Update the Footer component styling to align with the new 2026 visual design system. Apply gradient backgrounds or accents, updated typography, and modern spacing. Preserve the four-column layout with company info, product/company/support navigation links, social media icons, and caffeine.ai attribution with UTM tracking. Keep all link labels and URLs identical. Ensure footer styling complements the overall modern aesthetic."
+          "description": "Redesign the Footer component with the new aesthetic while preserving all existing content (company info, Product/Company/Support navigation links, social media icons with UTM tracking). Remove decorative gradient backgrounds and glassmorphism styling. Apply new footer design consistent with the chosen aesthetic direction - could be clean with strong dividers, minimal with subtle backgrounds, warm with softer tones, or dark with high contrast. Update link styling and hover states to match the new design system. Maintain the same information architecture and all external link tracking. Ensure footer complements the overall page design while maintaining clear content hierarchy."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Implement a cohesive, modern visual theme that differentiates from gradient-heavy glassmorphism - explore minimalist bold typography, corporate clean geometry, warm approachable colors, or dark high-contrast options",
+      "acceptanceCriteria": [
+        "New design direction is visually distinct from Version 2's purple-blue gradients and glassmorphism",
+        "Color palette, typography, layout patterns, and component styling create a unified visual identity",
+        "Design choice is appropriate for a professional payroll management platform",
+        "Visual hierarchy effectively guides users through content while maintaining brand trustworthiness"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Establish the foundational design system for Version 3 by defining a cohesive color palette, typography scale, and global styling utilities that create a unified visual identity distinct from the current gradient/glassmorphism approach. Choose one clear design direction (minimalist with bold typography, corporate clean with strong geometry, warm and approachable, or dark mode with high contrast) and implement it consistently. Define color tokens that convey professionalism and trust appropriate for financial services. Create utility classes for the new design patterns (shadows, borders, spacing, typography treatments) that will be used across all components. Ensure the foundation supports effective visual hierarchy and content flow."
         },
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/tailwind.config.js",
           "operation": "modify",
-          "description": "Review and update the App.tsx root component to ensure consistent application of the 2026 visual design system across all composed sections (Hero, FeaturesOverview, MobileAccessSection, ComplianceSection, Footer). Add any global styling wrappers or layout adjustments needed for the new aesthetic. Ensure smooth visual flow between sections with the gradient backgrounds and glassmorphic elements. Preserve the existing component composition and structure."
+          "description": "Configure Tailwind to fully support the chosen design direction by extending the default theme with custom values for colors, typography, spacing, shadows, and other design tokens. Define a typography hierarchy that supports the visual identity (font sizes, weights, line heights, letter spacing). Configure shadows, border radii, and spacing scales appropriate to the chosen aesthetic. If implementing a dark theme, configure dark mode settings. Add any custom utilities needed for the new design patterns. Ensure all configuration choices reinforce the cohesive visual theme and support professional credibility for a payroll platform."
         }
       ]
     }

@@ -1,13 +1,14 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
+  "projectStateVersion": 7,
   "summary": "Revamp of ableinternetpayroll.com - creating a modern version of the payroll management platform website for evaluation purposes",
   "architectural_notes": [
     "Prototype/demo version for evaluation - not a production payroll system",
     "Focus on UI/UX modernization while maintaining existing content structure",
     "Based on ableinternetpayroll.com features: employee management, payroll processing, tax filing, direct deposit, time tracking, benefits admin, reporting",
     "2026 design trends: bold gradients, glassmorphism effects, smooth animations, scroll-triggered effects",
-    "Modern visual presentation while maintaining all existing content and features"
+    "Modern visual presentation while maintaining all existing content and features",
+    "Version 3 will feature an alternative design aesthetic distinct from the 2026 gradients/glassmorphism approach"
   ],
   "known_issues": [],
   "isFixRequest": false,
@@ -107,6 +108,22 @@
         "REQ-12"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-create-an-alternative-design-version-version-3-with-a-completely-different-visual-aesthetic-from-the-current-2026-gradients-glassmorphism-style-while-maintaining-all-existing-payroll-content-employee-management-payroll-processing-tax-filing-and-compliance-direct-deposit-time-tracking-integration-benefits-administration-reporting-capabilities-mobile-access-and-security-features",
+      "title": "Create an alternative design version (Version 3) with a completely different visual aesthetic from the current 2026 gradients/glassmorphism style while maintaining all existing payroll content (employee management, payroll processing, tax filing and compliance, direct deposit, time tracking integration, benefits administration, reporting capabilities, mobile access, and security features)",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-the-alternative-version-with-a-cohesive-modern-visual-theme-that-differentiates-it-from-the-current-gradient-heavy-glassmorphic-aesthetic-explore-options-such-as-minimalist-with-bold-typography-corporate-clean-with-strong-geometry-warm-and-approachable-with-softer-colors-or-dark-mode-with-high-contrast-accents",
+      "title": "Design the alternative version with a cohesive, modern visual theme that differentiates it from the current gradient-heavy, glassmorphic aesthetic - explore options such as minimalist with bold typography, corporate clean with strong geometry, warm and approachable with softer colors, or dark mode with high contrast accents",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -119,6 +136,12 @@
     {
       "id": "AR-2",
       "summary": "Redesign with trendy 2026 aesthetic: bold gradients, glassmorphism, animations, modern color palette",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Create alternative design version (Version 3) with different aesthetic while keeping same payroll content",
       "reqIds": [],
       "status": "pending"
     }

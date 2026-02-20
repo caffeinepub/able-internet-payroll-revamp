@@ -2,141 +2,17 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-update-the-color-palette-throughout-the-application-to-use-bold-vibrant-gradients-with-modern-2026-aesthetics-replacing-the-current-deep-blue-and-teal-scheme-with-trendy-gradient-combinations-that-feel-fresh-and-forward-thinking-while-maintaining-professional-credibility-for-a-financial-service",
-      "featureTitle": "Update the color palette throughout the application to use bold, vibrant gradients with modern 2026 aesthetics, replacing the current deep blue and teal scheme with trendy gradient combinations that feel fresh and forward-thinking while maintaining professional credibility for a financial service",
-      "files": [
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-apply-glassmorphism-effects-to-card-components-feature-sections-and-ui-elements-throughout-the-site-including-frosted-glass-backgrounds-with-blur-effects-subtle-transparency-and-light-border-treatments",
-      "featureTitle": "Apply glassmorphism effects to card components, feature sections, and UI elements throughout the site, including frosted glass backgrounds with blur effects, subtle transparency, and light border treatments",
+      "featureId": "feature-create-an-alternative-design-version-version-3-with-a-completely-different-visual-aesthetic-from-the-current-2026-gradients-glassmorphism-style-while-maintaining-all-existing-payroll-content-employee-management-payroll-processing-tax-filing-and-compliance-direct-deposit-time-tracking-integration-benefits-administration-reporting-capabilities-mobile-access-and-security-features",
+      "featureTitle": "Create an alternative design version (Version 3) with a completely different visual aesthetic from the current 2026 gradients/glassmorphism style while maintaining all existing payroll content (employee management, payroll processing, tax filing and compliance, direct deposit, time tracking integration, benefits administration, reporting capabilities, mobile access, and security features)",
       "files": [
         "frontend/src/components/ComplianceSection.tsx",
         "frontend/src/components/FeatureCard.tsx",
-        "frontend/src/components/FeaturesOverview.tsx",
-        "frontend/src/components/MobileAccessSection.tsx",
-        "frontend/src/index.css"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-smooth-scroll-triggered-animations-to-all-major-sections-hero-featuresoverview-mobileaccesssection-compliancesection-that-animate-elements-into-view-as-users-scroll-down-the-page",
-      "featureTitle": "Add smooth scroll-triggered animations to all major sections (Hero, FeaturesOverview, MobileAccessSection, ComplianceSection) that animate elements into view as users scroll down the page",
-      "files": [
-        "frontend/src/components/ComplianceSection.tsx",
-        "frontend/src/components/FeaturesOverview.tsx",
-        "frontend/src/components/Hero.tsx",
-        "frontend/src/components/MobileAccessSection.tsx",
-        "frontend/src/hooks/useScrollAnimation.ts",
-        "frontend/src/index.css"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-update-typography-styling-with-modern-2026-trends-including-larger-bolder-headings-generous-letter-spacing-and-contemporary-font-weight-combinations-that-enhance-readability-while-feeling-cutting-edge",
-      "featureTitle": "Update typography styling with modern 2026 trends including larger, bolder headings, generous letter spacing, and contemporary font weight combinations that enhance readability while feeling cutting-edge",
-      "files": [
-        "frontend/src/components/ComplianceSection.tsx",
-        "frontend/src/components/FeaturesOverview.tsx",
-        "frontend/src/components/Hero.tsx",
-        "frontend/src/components/MobileAccessSection.tsx",
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-9"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-interactive-hover-effects-and-micro-animations-to-buttons-cards-and-interactive-elements-including-smooth-transitions-scale-effects-and-visual-feedback-that-enhance-user-engagement",
-      "featureTitle": "Add interactive hover effects and micro-animations to buttons, cards, and interactive elements including smooth transitions, scale effects, and visual feedback that enhance user engagement",
-      "files": [
-        "frontend/src/components/FeatureCard.tsx",
-        "frontend/src/components/FeaturesOverview.tsx",
-        "frontend/src/components/Hero.tsx",
-        "frontend/src/components/MobileAccessSection.tsx",
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-10"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-redesign-the-hero-section-with-a-more-dramatic-immersive-visual-treatment-using-large-gradients-dynamic-background-elements-and-modern-layout-that-captures-attention-while-maintaining-the-existing-messaging-and-cta-structure",
-      "featureTitle": "Redesign the Hero section with a more dramatic, immersive visual treatment using large gradients, dynamic background elements, and modern layout that captures attention while maintaining the existing messaging and CTA structure",
-      "files": [
-        "frontend/src/components/Hero.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-11"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-update-all-existing-content-sections-to-maintain-their-information-and-messaging-while-applying-the-new-2026-visual-design-system-ensuring-consistent-modern-aesthetics-across-the-entire-application",
-      "featureTitle": "Update all existing content sections to maintain their information and messaging while applying the new 2026 visual design system, ensuring consistent modern aesthetics across the entire application",
-      "files": [
-        "frontend/src/components/ComplianceSection.tsx",
         "frontend/src/components/FeaturesOverview.tsx",
         "frontend/src/components/Footer.tsx",
-        "frontend/src/components/MobileAccessSection.tsx"
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/MobileAccessSection.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -146,7 +22,26 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-12"
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-the-alternative-version-with-a-cohesive-modern-visual-theme-that-differentiates-it-from-the-current-gradient-heavy-glassmorphic-aesthetic-explore-options-such-as-minimalist-with-bold-typography-corporate-clean-with-strong-geometry-warm-and-approachable-with-softer-colors-or-dark-mode-with-high-contrast-accents",
+      "featureTitle": "Design the alternative version with a cohesive, modern visual theme that differentiates it from the current gradient-heavy, glassmorphic aesthetic - explore options such as minimalist with bold typography, corporate clean with strong geometry, warm and approachable with softer colors, or dark mode with high contrast accents",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
       ],
       "confidence": "high"
     }

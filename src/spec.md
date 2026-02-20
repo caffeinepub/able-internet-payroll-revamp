@@ -1,15 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Redesign the application with a modern 2026 aesthetic using bold gradients, glassmorphism effects, and smooth animations while preserving all existing content.
+**Goal:** Create an alternative design version (Version 3) for Able Payroll with a completely different visual aesthetic while preserving all existing content.
 
 **Planned changes:**
-- Update color palette to use bold, vibrant gradients throughout the application
-- Apply glassmorphism effects to cards, feature sections, and UI elements with frosted glass backgrounds and blur effects
-- Add smooth scroll-triggered animations that activate as sections enter the viewport
-- Update typography with larger, bolder headings and modern font weight combinations
-- Add interactive hover effects and micro-animations to buttons, cards, and interactive elements
-- Redesign the Hero section with dramatic gradients and dynamic background elements
-- Apply the new visual design system consistently across all existing content sections
+- Design a new visual aesthetic that is distinctly different from the current purple-blue gradients and glassmorphism style
+- Apply the new design system consistently across all existing sections (Hero, FeaturesOverview, MobileAccessSection, ComplianceSection, Footer)
+- Maintain all existing payroll content and messaging from Version 2
+- Ensure the new design maintains professional credibility appropriate for a financial/payroll service platform
 
-**User-visible outcome:** The application will have a cutting-edge 2026 visual design with bold gradients, glassmorphism effects, and smooth animations while maintaining all existing payroll features, content, and messaging.
+**User-visible outcome:** Users will see a completely redesigned Able Payroll landing page with a fresh visual aesthetic while all content, features, and functionality remain identical to the previous version.
